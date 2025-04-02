@@ -7,80 +7,75 @@
   <style>
     body {
       font-family: 'Segoe UI', sans-serif;
-      background: #fff;
-      color: #333;
       margin: 0;
+      padding: 0;
+      background: #fafafa;
+      color: #333;
     }
     header {
-      text-align: center;
-      background: #6a1b9a;
+      background: #663399;
       color: white;
       padding: 2em 1em;
+      text-align: center;
     }
     header img {
-      width: 100px;
-    }
-    header h1 {
-      margin: 0.5em 0 0.2em;
-      font-size: 2em;
-    }
-    header p {
-      margin: 0;
-      font-size: 1em;
-      font-weight: 300;
-      letter-spacing: 1px;
+      width: 80px;
+      margin-bottom: 1em;
     }
     nav {
       background: #eee;
-      text-align: center;
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 1em;
       padding: 1em;
     }
     nav a {
-      margin: 0 1em;
+      color: #663399;
       text-decoration: none;
-      color: #6a1b9a;
       font-weight: bold;
     }
     .section {
       max-width: 900px;
       margin: 3em auto;
       padding: 0 1em;
+      line-height: 1.6;
     }
-    .section img {
-      width: 100%;
-      max-width: 300px;
-      height: auto;
-      border-radius: 8px;
-      display: block;
-      margin: 1em auto;
-    }
-    h2 {
+    .section h2 {
+      color: #663399;
       font-size: 1.5em;
-      color: #6a1b9a;
+      margin-bottom: 0.5em;
+    }
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 1em;
       margin-top: 1em;
     }
+    .gallery img {
+      width: 100%;
+      border-radius: 8px;
+    }
+    .flyer {
+      margin: 2em auto;
+      text-align: center;
+    }
+    .flyer img {
+      max-width: 100%;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
     footer {
-      background: #f0f0f0;
       text-align: center;
       padding: 2em 1em;
       font-size: 0.9em;
-      margin-top: 4em;
-    }
-    @media (max-width: 600px) {
-      nav a {
-        display: block;
-        margin: 0.5em 0;
-      }
-      header h1 {
-        font-size: 1.6em;
-      }
+      color: #aaa;
     }
   </style>
 </head>
 <body>
-
   <header>
-    <img src="logo.jpg" alt="b kirby jewelry logo" />
+    <img src="logo.jpg" alt="b kirby logo">
     <h1>b kirby jewelry</h1>
     <p>JEWELRY FOR LIFE</p>
   </header>
@@ -93,42 +88,45 @@
     <a href="#contact">Contact</a>
   </nav>
 
-  <div class="section" id="classes">
+  <section class="section" id="classes">
     <h2>Metal Clay Jewelry Classes</h2>
     <p>Explore your creativity and learn to make beautiful, one-of-a-kind jewelry. Our beginner-friendly metal clay classes are hands-on, fun, and designed for all skill levels.</p>
-    <img src="class1.jpg" alt="Class in session" />
-    <img src="jewelry1.jpg" alt="Jewelry sample 1" />
-    <img src="jewelry2.jpg" alt="Jewelry sample 2" />
-  </div>
+    <div class="gallery">
+      <img src="class1.jpg" alt="Class in session">
+      <img src="jewelry1.jpg" alt="Jewelry sample 1">
+    </div>
+  </section>
 
-  <div class="section" id="workshops">
+  <section class="section" id="workshops">
     <h2>Upcoming Workshop</h2>
-    <p>Join us for a bold, creative day of metal clay jewelry making. No experience needed—just bring your imagination! Tools, guidance, and good vibes included.</p>
-    <p><a href="Melitas Spring Workshop - 2025 REV 2.jpg" target="_blank">📄 Click here to view full workshop flyer</a></p>
-    <img src="party1.jpg" alt="Workshop preview" />
-  </div>
+    <p>Join us for a bold, creative day of jewelry making. No experience needed—just bring your imagination! Tools, guidance, and good vibes included.</p>
+    <div class="flyer">
+      <a href="Melitas Spring Workshop - 2025 REV 2.jpg" target="_blank">
+        <img src="Melitas Spring Workshop - 2025 REV 2.jpg" alt="Spring Workshop Flyer">
+      </a>
+    </div>
+  </section>
 
-  <div class="section" id="parties">
+  <section class="section" id="parties">
     <h2>Host a Jewelry Party</h2>
     <p>Book a memorable evening of creativity and sparkle! Host a jewelry-making party for friends, family, or a special event. We’ll bring the tools—you bring the wine.</p>
-    <img src="party2.jpg" alt="Jewelry party in action" />
-  </div>
+    <div class="gallery">
+      <img src="party1.jpg" alt="Jewelry party photo 1">
+      <img src="party2.jpg" alt="Jewelry party photo 2">
+    </div>
+  </section>
 
-  <div class="section" id="about">
+  <section class="section" id="about">
     <h2>Meet Barbara</h2>
-    <img src="barbara.jpg" alt="Barbara Kirby" />
-    <p>Barbara Kirby started making jewelry as a way to heal—and discovered a lifelong passion. She now teaches others the joy of turning raw materials into radiant, wearable art. With years of experience in metalsmithing and metal clay, Barbara’s workshops are as inspiring as they are fun.</p>
-  </div>
+    <div class="gallery">
+      <img src="barbara.jpg" alt="Barbara Kirby">
+    </div>
+    <p>Barbara Kirby started making jewelry as a way to heal—and discovered a lifelong passion. She now teaches others the joy of turning raw materials into radiant, wearable art. With years of experience in metalsmithing and metal clay, Barbara’s workshops are a blend of skill, inspiration, and personal expression.</p>
+  </section>
 
-  <div class="section" id="contact">
-    <h2>Contact</h2>
-    <p>Email: <a href="mailto:barbie10562@gmail.com">barbie10562@gmail.com</a></p>
-    <p>Etsy: <a href="https://etsy.com/shop/bkirbyjewelry" target="_blank">bkirbyjewelry on Etsy</a></p>
-  </div>
-
-  <footer>
-    &copy; 2025 b kirby jewelry — All rights reserved.
+  <footer id="contact">
+    <p>Contact: <a href="mailto:barbie10562@gmail.com">barbie10562@gmail.com</a></p>
+    <p><a href="https://www.etsy.com/shop/BKirbyJewelry" target="_blank">Visit Etsy Store (currently on break)</a></p>
   </footer>
-
 </body>
 </html>
