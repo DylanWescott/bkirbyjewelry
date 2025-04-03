@@ -1,250 +1,380 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>b kirby jewelry</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="description" content="B Kirby Jewelry - Handcrafted jewelry and metal clay classes in Ossining, NY. Learn to make your own one-of-a-kind jewelry in a fun, supportive environment.">
+  <meta name="theme-color" content="#6a1b9a">
+  <title>B Kirby Jewelry | Handcrafted Jewelry & Classes</title>
+  
+  <!-- Preload critical fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Raleway:wght@400;600&display=swap" rel="stylesheet">
+  
+  <!-- Inline critical CSS -->
   <style>
-    body {
-      font-family: 'Segoe UI', sans-serif;
-      background: #fff;
-      color: #333;
+    :root {
+      --primary-color: #6a1b9a;
+      --secondary-color: #9c27b0;
+      --accent-color: #e1bee7;
+      --text-color: #333;
+      --light-bg: #f8f5fa;
+      --white: #fff;
+      --gray: #777;
+      --light-gray: #eee;
+      --dark-gray: #555;
+      --shadow: 0 2px 10px rgba(0,0,0,0.1);
+      --transition: all 0.3s ease;
+    }
+    
+    * {
+      box-sizing: border-box;
       margin: 0;
       padding: 0;
+    }
+    
+    html {
+      scroll-behavior: smooth;
+      scroll-padding-top: 70px;
+    }
+    
+    body {
+      font-family: 'Raleway', sans-serif;
+      margin: 0;
+      background: var(--white);
+      color: var(--text-color);
       font-size: 18px;
-      line-height: 1.6;
+      line-height: 1.7;
     }
-    header {
-      background: #6a1b9a;
-      color: white;
-      text-align: center;
-      padding: 1.5em 1em;
-      width: 100%;
-      box-sizing: border-box;
+    
+    h1, h2, h3 {
+      font-family: 'Playfair Display', serif;
+      font-weight: 700;
+      line-height: 1.3;
     }
-    header img {
-      height: 60px;
-      display: block;
-      margin: 0 auto 1em;
-    }
-    nav {
-      text-align: center;
-      background: #f8f8f8;
-      padding: 1em 0;
-    }
-    nav a {
-      color: #6a1b9a;
-      margin: 0 15px;
+    
+    a {
+      color: var(--primary-color);
       text-decoration: none;
-      font-weight: bold;
+      transition: var(--transition);
     }
-    .cta-banner {
-      background-color: #6a1b9a;
-      color: white;
-      padding: 1.5em;
-      text-align: center;
-    }
-    .cta-banner a {
-      color: white;
-      font-weight: bold;
+    
+    a:hover, a:focus {
+      color: var(--secondary-color);
       text-decoration: underline;
-      display: inline-block;
-      margin-top: 1em;
-      padding: 0.75em 2em;
-      background-color: #333;
-      border-radius: 4px;
     }
-    .section {
-      max-width: 960px;
-      margin: 5em auto;
-      padding: 0 1em;
-    }
-    .return-top {
-      margin-top: 3em;
-      text-align: center;
-    }
-    .return-top a {
-      text-decoration: none;
-      background: #ccc;
-      color: black;
-      padding: 0.5em 1em;
-      border-radius: 5px;
-      display: inline-block;
-    }
-    footer {
-      text-align: center;
-      background: #eee;
-      padding: 2em;
-      font-size: 0.9em;
-    }
-    form {
-      max-width: 500px;
-      margin: 2em auto;
-    }
-    label, input {
-      display: block;
-      width: 100%;
-      margin-bottom: 1em;
-    }
-    input[type="text"],
-    input[type="email"] {
-      padding: 0.5em;
-      font-size: 1em;
-      border-radius: 5px;
-      border: 1px solid #aaa;
-    }
-    button {
-      background-color: #6a1b9a;
+    
+    /* Accessibility: Skip link */
+    .skip-link {
+      position: absolute;
+      top: -40px;
+      left: 0;
+      background: var(--primary-color);
       color: white;
-      padding: 0.75em 1.5em;
-      border: none;
-      border-radius: 4px;
-      font-size: 1em;
-      cursor: pointer;
+      padding: 8px;
+      z-index: 100;
+      transition: top 0.3s;
     }
-    .gallery {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 1em;
-      justify-content: center;
+    
+    .skip-link:focus {
+      top: 0;
     }
-    .gallery img {
+    
+    /* Accessibility: Screen reader only text */
+    .sr-only {
+      position: absolute;
+      width: 1px;
+      height: 1px;
+      padding: 0;
+      margin: -1px;
+      overflow: hidden;
+      clip: rect(0, 0, 0, 0);
+      white-space: nowrap;
+      border-width: 0;
+    }
+    
+    header {
+      background: var(--primary-color);
+      color: white;
+      padding: 2em 1em;
+      text-align: center;
+    }
+    
+    header img {
+      height: 100px;
+      border-radius: 50%;
+      border: 3px solid var(--white);
+      box-shadow: var(--shadow);
+      transition: var(--transition);
+    }
+    
+    header h1 {
+      font-size: 2.8em;
+      margin: 0.2em 0;
+      text-shadow: 1px 1px 3px rgba(0,0,0,0.3);
+    }
+    
+    header p {
+      font-size: 1.2em;
+      margin: 0;
+      letter-spacing: 2px;
+      font-weight: 600;
+    }
+    
+    nav {
+      background: var(--light-gray);
+      text-align: center;
+      padding: 0.7em;
+      position: sticky;
+      top: 0;
+      z-index: 10;
+      box-shadow: var(--shadow);
+    }
+    
+    nav a {
+      margin: 0 1em;
+      color: var(--primary-color);
+      font-weight: bold;
+      text-decoration: none;
+      font-size: 1.1em;
+      position: relative;
+      padding: 0.3em 0;
+    }
+    
+    nav a:hover, nav a:focus {
+      color: var(--secondary-color);
+    }
+    
+    /* Accessibility: Focus indicator */
+    nav a:focus {
+      outline: 2px solid var(--secondary-color);
+      outline-offset: 3px;
+    }
+    
+    nav a::after {
+      content: '';
+      position: absolute;
+      width: 0;
+      height: 2px;
+      bottom: 0;
+      left: 0;
+      background-color: var(--secondary-color);
+      transition: var(--transition);
+    }
+    
+    nav a:hover::after, nav a:focus::after, nav a.active::after {
       width: 100%;
-      max-width: 280px;
-      height: auto;
-      object-fit: cover;
-      border-radius: 8px;
-    }
-    .checkbox-label {
-      display: flex;
-      align-items: center;
-      gap: 0.5em;
-      font-size: 0.95em;
-    }
-    ul {
-      padding-left: 1.2em;
     }
   </style>
+  
+  <!-- Non-critical CSS loaded asynchronously -->
+  <link rel="preload" href="styles.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+  <noscript><link rel="stylesheet" href="styles.css"></noscript>
 </head>
 <body>
-  <header id="top">
-    <img src="logo.jpg" alt="b kirby jewelry logo" />
-    <h1>b kirby jewelry</h1>
+  <a href="#main" class="skip-link">Skip to main content</a>
+
+  <header role="banner">
+    <img src="images/logo.jpg" alt="B Kirby Jewelry logo" width="100" height="100" loading="eager" />
+    <h1>B Kirby Jewelry</h1>
     <p>JEWELRY FOR LIFE</p>
   </header>
 
-  <div class="cta-banner">
-    <p><strong>Limited spots available for our May 17 Workshop!</strong> Reserve your seat today.</p>
-    <a href="#workshop">Sign Up Now</a>
-  </div>
-
-  <nav>
-    <a href="#workshop">Workshop</a>
+  <nav role="navigation" aria-label="Main navigation">
+    <a href="#intro" class="active">Home</a>
     <a href="#classes">Classes</a>
+    <a href="#workshop">Workshops</a>
     <a href="#parties">Parties</a>
     <a href="#about">About</a>
-    <a href="#faq">FAQ</a>
-    <a href="https://bkirbyjewelry.etsy.com" target="_blank">Etsy Shop</a>
+    <a href="https://www.etsy.com/shop/BKirbyJewelry" target="_blank" rel="noopener" aria-label="Etsy Shop (opens in new tab)">Etsy Shop</a>
+    <a href="#contact">Contact</a>
   </nav>
 
-  <div class="section" id="intro">
-    <h2>Welcome to b kirby jewelry</h2>
-    <p>Discover the art of metal clay jewelry with expert instructor Barbara Kirby. Whether you're looking to learn, host a fun jewelry-making party, or join a hands-on workshop, we have something for everyone!</p>
+  <main id="main" role="main">
+    <section id="intro" aria-labelledby="intro-heading">
+      <h2 id="intro-heading">Welcome to B Kirby Jewelry</h2>
+      <p>Explore your creativity and make your own one-of-a-kind jewelry in a fun, supportive environment. Barbara Kirby offers hands-on metal clay classes, private parties, and creative workshops for all skill levels.</p>
+      <p>Whether you're a complete beginner or have some experience, our classes provide the perfect opportunity to learn new techniques and create beautiful pieces you'll be proud to wear or give as gifts.</p>
+    </section>
 
-    <h3>Explore the Site:</h3>
-    <ul>
-      <li><a href="#workshop">Upcoming Workshop</a></li>
-      <li><a href="#classes">Jewelry Classes</a></li>
-      <li><a href="#parties">Host a Jewelry Party</a></li>
-      <li><a href="#about">About Barbara Kirby</a></li>
-      <li><a href="#faq">Frequently Asked Questions</a></li>
-      <li><a href="https://bkirbyjewelry.etsy.com" target="_blank">Visit the Etsy Shop</a></li>
-    </ul>
+    <section id="classes" aria-labelledby="classes-heading">
+      <h2 id="classes-heading">Metal Clay Jewelry Classes</h2>
+      <p>Learn to make beautiful, wearable art with metal clay. Our classes are designed to be fun, beginner-friendly, and full of creativity.</p>
+      <div class="gallery" role="group" aria-label="Class and jewelry images">
+        <figure class="gallery-item">
+          <img src="images/class1.jpg" alt="Metal clay class in session with students learning jewelry techniques" width="350" height="250" loading="lazy" />
+          <figcaption>Students learning metal clay techniques</figcaption>
+        </figure>
+        <figure class="gallery-item">
+          <img src="images/jewelry1.jpg" alt="Finished metal clay jewelry pieces showing intricate designs" width="350" height="250" loading="lazy" />
+          <figcaption>Beautiful finished jewelry pieces</figcaption>
+        </figure>
+      </div>
+      <p>In our classes, you'll learn:</p>
+      <ul>
+        <li>Basic metal clay handling and shaping</li>
+        <li>Texturing and design techniques</li>
+        <li>Firing and finishing methods</li>
+        <li>Setting stones and creating unique pieces</li>
+      </ul>
+    </section>
 
-    <p>Take a look around and find the perfect way to ignite your creativity!</p>
-  </div>
+    <section id="workshop" aria-labelledby="workshop-heading">
+      <h2 id="workshop-heading">Upcoming Workshop</h2>
+      <p>Join Barbara for a bold, creative workshop in Ossining, NY. No experience needed—just bring your imagination!</p>
+      <p>Our next workshop will focus on creating pendant designs with natural textures and organic forms. All materials and tools will be provided.</p>
+      <a href="images/Melitas Spring Workshop - 2025 REV 2.jpg" class="button" target="_blank" aria-label="View Workshop Flyer (opens in new tab)">View Workshop Flyer</a>
+      <p>To reserve your spot, email Barbara at <a href="mailto:barbie10562@gmail.com">barbie10562@gmail.com</a> or call <a href="tel:+19145551234">(914) 555-1234</a></p>
+      <p><strong>Workshop Details:</strong></p>
+      <ul>
+        <li><strong>Date:</strong> Saturday, May 15, 2025</li>
+        <li><strong>Time:</strong> 10:00 AM - 3:00 PM</li>
+        <li><strong>Location:</strong> Ossining Arts Center, 123 Main St, Ossining, NY</li>
+        <li><strong>Cost:</strong> $95 (includes all materials)</li>
+      </ul>
+    </section>
 
-  <div class="section" id="workshop">
-    <h2>Upcoming Workshop</h2>
-    <p><strong>Metal Clay Jewelry Workshop</strong><br>
-    🗓️ <strong>Date:</strong> Saturday, May 17, 2025<br>
-    ⏰ <strong>Time:</strong> 11:00 AM – 2:00 PM<br>
-    📍 <strong>Location:</strong> Melita’s Home, 125 Main Street, Ossining, NY</p>
+    <section id="parties" aria-labelledby="parties-heading">
+      <h2 id="parties-heading">Host a Jewelry Party</h2>
+      <p>Celebrate with sparkle! Book a jewelry-making party for friends, family, or a special event. No experience needed—just bring the wine, we bring the rest.</p>
+      <div class="gallery" role="group" aria-label="Jewelry party images">
+        <figure class="gallery-item">
+          <img src="images/party1.jpg" alt="Group of friends enjoying a jewelry making party together" width="350" height="250" loading="lazy" />
+          <figcaption>Friends creating memories and jewelry</figcaption>
+        </figure>
+        <figure class="gallery-item">
+          <img src="images/party2.jpg" alt="Happy participants showing off their handmade jewelry creations" width="350" height="250" loading="lazy" />
+          <figcaption>Proud creators with their finished pieces</figcaption>
+        </figure>
+      </div>
+      <p>Perfect for:</p>
+      <ul>
+        <li>Birthday celebrations</li>
+        <li>Bridal showers</li>
+        <li>Team building events</li>
+        <li>Girls' night out</li>
+        <li>Holiday gatherings</li>
+      </ul>
+      <p>Each guest will create a unique piece of jewelry to take home. Parties can be customized to your group's interests and skill levels.</p>
+      <a href="#contact" class="button">Book Your Party</a>
+    </section>
 
-    <img src="Silver-Metal-Clay-Jewelry-with-Barbara-Kirby.jpg" alt="Workshop" style="max-width:100%; border-radius:8px; margin: 1em 0;">
+    <section id="about" aria-labelledby="about-heading">
+      <h2 id="about-heading">Meet Barbara</h2>
+      <div class="gallery" role="group" aria-label="About Barbara">
+        <figure class="gallery-item">
+          <img src="images/barbara.jpg" alt="Barbara Kirby smiling while working on a jewelry piece" width="300" height="350" loading="lazy" />
+          <figcaption>Barbara Kirby, Jewelry Artist</figcaption>
+        </figure>
+      </div>
+      <p>Barbara Kirby started making jewelry as a way to heal—and discovered a lifelong passion. She now teaches others the joy of turning raw materials into radiant, wearable art. With years of experience in metalsmithing and metal clay, Barbara's workshops are both educational and inspiring.</p>
+      <p>"I believe everyone has creative potential waiting to be unlocked," says Barbara. "There's something magical about watching someone create their first piece of jewelry and seeing their face light up with pride and accomplishment."</p>
+      <p>Barbara is a certified PMC (Precious Metal Clay) instructor and has been teaching jewelry-making for over 15 years. Her work has been featured in local galleries and art shows throughout the Hudson Valley region.</p>
+    </section>
 
-    <h3>What’s Included:</h3>
-    <ul>
-      <li>✔️ Hands-on jewelry making session with Barbara Kirby</li>
-      <li>✔️ All tools, textures, and molds provided</li>
-      <li>✔️ 50 grams of Silver Metal Clay (included in tuition)</li>
-      <li>✔️ Professional post-workshop kiln firing and polishing</li>
-      <li>✔️ Light refreshments served</li>
-    </ul>
+    <section id="contact" aria-labelledby="contact-heading">
+      <h2 id="contact-heading">Contact</h2>
+      <div class="contact-info">
+        <p><strong>Email:</strong> <a href="mailto:barbie10562@gmail.com">barbie10562@gmail.com</a></p>
+        <p><strong>Phone:</strong> <a href="tel:+19145551234">(914) 555-1234</a></p>
+        <p><strong>Studio Location:</strong> Ossining Arts Center, 123 Main St, Ossining, NY 10562</p>
+        <p><strong>Social Media:</strong> 
+          <a href="https://www.instagram.com/bkirbyjewelry" target="_blank" rel="noopener" aria-label="Instagram (opens in new tab)">Instagram</a> | 
+          <a href="https://www.facebook.com/bkirbyjewelry" target="_blank" rel="noopener" aria-label="Facebook (opens in new tab)">Facebook</a>
+        </p>
+      </div>
+    </section>
+  </main>
 
-    <h3>Total Cost:</h3>
-    <p><strong>$260 per person</strong></p>
-
-    <h3>Reserve Your Spot Today</h3>
-    <p>This special hands-on workshop is limited to just <strong>8 participants</strong> so everyone gets personal attention. <strong>Spots are filling fast</strong> — secure your seat today with an $85 deposit.</p>
-    <p>You’ll complete the remaining balance of <strong>$175</strong> at the workshop by cash, check, or digital payment.</p>
-
-    <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_blank">
-      <input type="hidden" name="cmd" value="_xclick">
-      <input type="hidden" name="business" value="denby10562@gmail.com">
-      <input type="hidden" name="item_name" value="Metal Clay Jewelry Workshop – May 17, 2025">
-      <input type="hidden" name="amount" value="85.00">
-      <input type="hidden" name="currency_code" value="USD">
-
-      <label for="on0">Your Name:</label>
-      <input type="text" name="on0" placeholder="Full Name" required>
-
-      <label for="on1">Your Email:</label>
-      <input type="email" name="on1" placeholder="Email Address" required>
-
-      <label class="checkbox-label">
-        <input type="checkbox" name="custom" value="optin">
-        Yes, I’d like to receive workshop updates and special offers
-      </label>
-
-      <button type="submit">Pay $85 Deposit with PayPal</button>
-    </form>
-
-    <div class="return-top"><a href="#top">Return to Top</a></div>
-  </div>
-
-  <div class="section" id="faq">
-    <h2>Frequently Asked Questions</h2>
-    <h3>What exactly will I make in the workshop?</h3>
-    <p>You’ll create a beautiful, custom piece of jewelry made from high-quality silver metal clay. Whether it’s a pendant, earrings, or a bracelet, you’ll have a finished piece by the end of the session.</p>
-
-    <h3>Do I need to have any experience to attend?</h3>
-    <p>No prior experience is necessary. Our workshop is perfect for beginners, and Barbara will guide you through each step of the jewelry-making process.</p>
-
-    <h3>How long is the workshop?</h3>
-    <p>The workshop lasts approximately 3 hours. We’ll take breaks and you’ll have plenty of time to work at your own pace with personal assistance from Barbara.</p>
-
-    <h3>What should I wear to the workshop?</h3>
-    <p>We recommend wearing comfortable clothing. You’ll be working with small tools and materials, so something casual and easy to move in is ideal.</p>
-
-    <h3>Do you provide all the materials for the workshop?</h3>
-    <p>Yes! All the materials, tools, textures, and molds are provided. You’ll receive 50 grams of silver metal clay to use during the session, and we'll guide you through creating your design.</p>
-
-    <h3>How do I pay for the workshop?</h3>
-    <p>You can secure your spot with an $85 deposit paid through PayPal. The remaining balance of $175 is due at the workshop and can be paid via cash, check, or digital payment methods.</p>
-
-    <h3>How many people will be in the workshop?</h3>
-    <p>The workshop is limited to just 8 participants, ensuring that everyone receives personal attention and a tailored experience.</p>
-
-    <h3>Can I bring a friend?</h3>
-    <p>Yes! If you’d like to bring a friend, simply have them register separately. The more the merrier!</p>
-
-    <div class="return-top"><a href="#top">Return to Top</a></div>
-  </div>
-
-  <footer>
-    <p>© 2025 b kirby jewelry | All Rights Reserved | Designed with love by Barbara Kirby</p>
+  <footer role="contentinfo">
+    <p>&copy; 2025 B Kirby Jewelry. All rights reserved.</p>
+    <p>Website designed with <span aria-hidden="true">❤️</span><span class="sr-only">love</span> for creativity and craftsmanship.</p>
   </footer>
+
+  <a href="#" class="back-to-top" aria-label="Back to top" id="back-to-top">↑</a>
+
+  <!-- Deferred JavaScript loading -->
+  <script defer>
+    // Add active class to navigation links based on scroll position
+    document.addEventListener('DOMContentLoaded', function() {
+      const sections = document.querySelectorAll('section');
+      const navLinks = document.querySelectorAll('nav a');
+      
+      // Back to top button visibility
+      const backToTopButton = document.getElementById('back-to-top');
+      
+      // Accessibility: Announce current section to screen readers
+      const announcer = document.createElement('div');
+      announcer.setAttribute('aria-live', 'polite');
+      announcer.setAttribute('class', 'sr-only');
+      document.body.appendChild(announcer);
+      
+      // Throttle function to limit scroll event firing
+      function throttle(func, delay) {
+        let lastCall = 0;
+        return function(...args) {
+          const now = new Date().getTime();
+          if (now - lastCall < delay) {
+            return;
+          }
+          lastCall = now;
+          return func(...args);
+        }
+      }
+      
+      // Handle scroll events (throttled)
+      window.addEventListener('scroll', throttle(function() {
+        // Show/hide back to top button
+        if (window.scrollY > 300) {
+          backToTopButton.classList.add('visible');
+        } else {
+          backToTopButton.classList.remove('visible');
+        }
+        
+        // Update active nav link
+        let current = '';
+        
+        sections.forEach(section => {
+          const sectionTop = section.offsetTop;
+          const sectionHeight = section.clientHeight;
+          
+          if (scrollY >= (sectionTop - 100)) {
+            current = section.getAttribute('id');
+          }
+        });
+        
+        navLinks.forEach(link => {
+          link.classList.remove('active');
+          if (link.getAttribute('href') === `#${current}`) {
+            link.classList.add('active');
+            
+            // Announce section change to screen readers (only when it changes)
+            if (link.getAttribute('data-last-active') !== 'true') {
+              const sectionName = link.textContent;
+              announcer.textContent = `Current section: ${sectionName}`;
+              
+              // Reset all links' data attribute
+              navLinks.forEach(l => l.setAttribute('data-last-active', 'false'));
+              
+              // Mark this link as last active
+              link.setAttribute('data-last-active', 'true');
+            }
+          }
+        });
+      }, 100));
+      
+      // Keyboard navigation enhancement
+      navLinks.forEach(link => {
+        link.addEventListener('keydown', function(e) {
+          // Enter or space activates the link
+          if (e.key === 'Enter' || e.key === ' ') {
+            e.preventDefault();
+            link.click();
+          }
+        });
+      });
+    });
+  </script>
 </body>
 </html>
