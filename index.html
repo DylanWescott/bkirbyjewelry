@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -85,6 +84,26 @@
       font-size: 1em;
       cursor: pointer;
     }
+    .gallery {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1em;
+      justify-content: center;
+    }
+    .gallery img {
+      width: 280px;
+      object-fit: cover;
+      border-radius: 8px;
+    }
+    .checkbox-label {
+      display: flex;
+      align-items: center;
+      gap: 0.5em;
+      font-size: 0.95em;
+    }
+    ul {
+      padding-left: 1.2em;
+    }
   </style>
 </head>
 <body>
@@ -105,14 +124,31 @@
   <div class="section" id="workshop">
     <h2>Upcoming Workshop</h2>
     <p><strong>Metal Clay Jewelry Workshop</strong><br>
-    Saturday, May 17, 2025 | 11:00 AM – 2:00 PM<br>
-    125 Main Street, Ossining, NY</p>
+    🗓️ <strong>Date:</strong> Saturday, May 17, 2025<br>
+    ⏰ <strong>Time:</strong> 11:00 AM – 2:00 PM<br>
+    📍 <strong>Location:</strong> 125 Main Street, Ossining, NY</p>
 
-    <img src="Silver-Metal-Clay-Jewelry-with-Barbara-Kirby.jpg" alt="Workshop" style="max-width:100%; border-radius:8px;">
+    <img src="Silver-Metal-Clay-Jewelry-with-Barbara-Kirby.jpg" alt="Workshop" style="max-width:100%; border-radius:8px; margin: 1em 0;">
 
-    <p>This hands-on workshop includes tools, textures, 50g of silver clay, and post-firing finishing. No experience needed—just bring your creativity!</p>
+    <h3>What’s Included:</h3>
+    <ul>
+      <li>✔️ Hands-on jewelry making session with Barbara Kirby</li>
+      <li>✔️ All tools, textures, and molds provided</li>
+      <li>✔️ 50 grams of Silver Metal Clay (included in tuition)</li>
+      <li>✔️ Professional post-workshop kiln firing and polishing</li>
+      <li>✔️ Light refreshments served</li>
+    </ul>
 
-    <h3>Reserve Your Spot</h3>
+    <h3>Total Cost:</h3>
+    <p><strong>$260 per person</strong></p>
+
+    <h3>Reserve Your Spot Today</h3>
+    <p>
+      This special hands-on workshop is limited to just <strong>8 participants</strong> so everyone gets personal attention.
+      <strong>Spots are filling fast</strong> — secure your seat today with an $85 deposit.
+    </p>
+    <p>You’ll complete the remaining balance of <strong>$175</strong> at the workshop by cash, check, or digital payment.</p>
+
     <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_blank">
       <input type="hidden" name="cmd" value="_xclick">
       <input type="hidden" name="business" value="denby10562@gmail.com">
@@ -126,7 +162,7 @@
       <label for="on1">Your Email:</label>
       <input type="email" name="on1" placeholder="Email Address" required>
 
-      <label>
+      <label class="checkbox-label">
         <input type="checkbox" name="custom" value="optin">
         Yes, I’d like to receive workshop updates and special offers
       </label>
@@ -136,16 +172,3 @@
 
     <div class="return-top"><a href="#top">Return to Top</a></div>
   </div>
-
-  <div class="section" id="about">
-    <h2>Meet Barbara</h2>
-    <img src="barbara.jpg" alt="Barbara Kirby" style="width:220px; border-radius:12px; margin-bottom:1em;">
-    <p>Barbara Kirby started making jewelry as a way to heal—and discovered a lifelong passion. She now teaches others the joy of turning raw materials into radiant, wearable art. With years of experience in metalsmithing and metal clay, Barbara’s workshops are welcoming, hands-on, and filled with encouragement.</p>
-    <div class="return-top"><a href="#top">Return to Top</a></div>
-  </div>
-
-  <footer>
-    &copy; 2025 Barbara Kirby Jewelry. All rights reserved.
-  </footer>
-</body>
-</html>
