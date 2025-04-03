@@ -1,17 +1,18 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>b kirby jewelry</title>
   <style>
     body {
       font-family: 'Segoe UI', sans-serif;
-      margin: 0;
-      background: #fff;
+      background: #ffffff;
       color: #333;
+      margin: 0;
+      line-height: 1.6;
       font-size: 18px;
-      line-height: 1.7;
     }
     header {
       background: #6a1b9a;
@@ -19,134 +20,139 @@
       padding: 2em 1em;
       text-align: center;
     }
-    header img {
-      height: 100px;
-    }
-    header h1 {
-      font-size: 2.8em;
-      margin: 0.2em 0;
-    }
-    header p {
-      font-size: 1.2em;
-      margin: 0;
-    }
     nav {
-      background: #eee;
+      margin: 1em 0;
       text-align: center;
-      padding: 0.7em;
     }
     nav a {
-      margin: 0 1em;
+      margin: 0 15px;
+      text-decoration: none;
       color: #6a1b9a;
       font-weight: bold;
-      text-decoration: none;
-      font-size: 1.1em;
     }
-    section {
-      max-width: 1000px;
-      margin: 8em auto;
-      padding: 2em;
+    .section {
+      max-width: 960px;
+      margin: 4em auto;
+      padding: 0 1em;
+    }
+    .section img {
+      max-width: 100%;
+      height: auto;
+      border-radius: 8px;
     }
     .gallery {
       display: flex;
       flex-wrap: wrap;
+      gap: 1em;
       justify-content: center;
-      gap: 2em;
-      margin-top: 1.5em;
     }
     .gallery img {
-      max-width: 100%;
-      height: auto;
-      border-radius: 8px;
-      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+      width: 280px;
+      object-fit: cover;
     }
-    .button {
-      display: inline-block;
-      padding: 0.7em 1.4em;
-      background: #6a1b9a;
-      color: white;
-      text-decoration: none;
-      border-radius: 6px;
-      font-weight: bold;
-      margin-top: 1em;
+    form {
+      margin-top: 2em;
+    }
+    input, label, button {
+      display: block;
+      width: 100%;
+      max-width: 400px;
+      margin: 10px auto;
+      font-size: 16px;
     }
     footer {
+      background: #f0f0f0;
       text-align: center;
+      padding: 1em;
       font-size: 0.9em;
-      color: #777;
-      padding: 3em 1em 1em;
-      border-top: 1px solid #ccc;
     }
-    @media (max-width: 600px) {
-      header h1 { font-size: 2em; }
-      nav a { display: block; margin: 0.5em 0; }
+    .pay-button {
+      display: inline-block;
+      background: #6a1b9a;
+      color: white;
+      padding: 0.75em 1.5em;
+      text-decoration: none;
+      border-radius: 4px;
+      font-weight: bold;
+      margin: 1em auto;
     }
   </style>
 </head>
 <body>
+  <header>
+    <h1>b kirby jewelry</h1>
+    <p>JEWELRY FOR LIFE</p>
+  </header>
+  <nav>
+    <a href="#classes">Classes</a>
+    <a href="#workshops">Workshops</a>
+    <a href="#parties">Parties</a>
+    <a href="#about">About</a>
+    <a href="https://bkirbyjewelry.etsy.com" target="_blank">Etsy</a>
+  </nav>
 
-<header>
-  <img src="logo.jpg" alt="b kirby jewelry logo" />
-  <h1>b kirby jewelry</h1>
-  <p>JEWELRY FOR LIFE</p>
-</header>
-
-<nav>
-  <a href="#intro">Home</a>
-  <a href="#classes">Classes</a>
-  <a href="#workshop">Workshops</a>
-  <a href="#parties">Parties</a>
-  <a href="#about">About</a>
-  <a href="https://www.etsy.com/shop/BKirbyJewelry" target="_blank">Etsy Shop</a>
-  <a href="#contact">Contact</a>
-</nav>
-
-<section id="intro">
-  <h2>Welcome to b kirby jewelry</h2>
-  <p>Explore your creativity and make your own one-of-a-kind jewelry in a fun, supportive environment. Barbara Kirby offers hands-on metal clay classes, private parties, and creative workshops for all skill levels.</p>
-</section>
-
-<section id="classes">
-  <h2>Metal Clay Jewelry Classes</h2>
-  <p>Learn to make beautiful, wearable art with metal clay. Our classes are designed to be fun, beginner-friendly, and full of creativity.</p>
-  <div class="gallery">
-    <img src="class1.jpg" alt="Class in session" width="350"/>
-    <img src="jewelry1.jpg" alt="Jewelry sample 1" width="350"/>
+  <div class="section" id="intro">
+    <h2>Welcome to b kirby jewelry</h2>
+    <p>Explore your creativity and make your own one-of-a-kind jewelry in a fun, supportive environment. Barbara Kirby offers hands-on metal clay classes, private parties, and creative workshops for all skill levels.</p>
   </div>
-</section>
 
-<section id="workshop">
-  <h2>Upcoming Workshop</h2>
-  <p>Join Barbara for a bold, creative workshop in Ossining, NY. No experience needed—just bring your imagination!</p>
-  <a href="Melitas%20Spring%20Workshop%20-%202025%20REV%202.jpg" class="button" target="_blank">View Workshop Flyer</a>
-  <p>To reserve your spot, email Barbara at <a href="mailto:barbie10562@gmail.com">barbie10562@gmail.com</a></p>
-</section>
-
-<section id="parties">
-  <h2>Host a Jewelry Party</h2>
-  <p>Celebrate with sparkle! Book a jewelry-making party for friends, family, or a special event. No experience needed—just bring the wine, we bring the rest.</p>
-  <div class="gallery">
-    <img src="party1.jpg" alt="Jewelry party in action" width="350"/>
-    <img src="party2.jpg" alt="Happy students wearing jewelry" width="350"/>
+  <div class="section" id="classes">
+    <h2>Metal Clay Jewelry Classes</h2>
+    <p>Learn to make beautiful, wearable art with metal clay. Our classes are designed to be fun, beginner-friendly, and full of creativity.</p>
+    <div class="gallery">
+      <img src="class1.jpg" alt="Class in session" />
+      <img src="jewelry1.jpg" alt="Jewelry samples" />
+    </div>
   </div>
-</section>
 
-<section id="about">
-  <h2>Meet Barbara</h2>
-  <div class="gallery">
-    <img src="barbara.jpg" alt="Barbara Kirby" width="300" />
+  <div class="section" id="workshops">
+    <h2>Upcoming Workshop</h2>
+    <p>🎨 <strong>METAL CLAY JEWELRY WORKSHOP</strong><br />
+      🗓️ <strong>Saturday May 17, 2025</strong> | ⏰ <strong>11 AM - 2 PM</strong><br />
+      📍 <strong>Melita's Home - 125 Main Street, Ossining, NY</strong>
+    </p>
+    <img src="Silver-Metal-Clay-Jewelry-with-Barbara-Kirby.jpg" alt="Workshop Sample Art" />
+    <p>✅ All tools, materials, textures, and molds<br />
+      ✅ Professional post-workshop firing & finishing<br />
+      ✅ 50 grams of Silver Clay (included in tuition)</p>
+    <p>💰 <strong>Total Tuition: $260 per person</strong><br />
+      To secure your place, send a $85 deposit using the PayPal button below.</p>
+
+    <a class="pay-button" href="https://www.paypal.com/paypalme/denby10562/85" target="_blank">Pay $85 Deposit via PayPal</a>
+
+    <form action="https://formsubmit.co/denby10562@gmail.com" method="POST">
+      <label for="name">Your Name</label>
+      <input type="text" name="name" required />
+      <label for="email">Your Email</label>
+      <input type="email" name="email" required />
+      <label><input type="checkbox" name="subscribe" /> Yes, I’d like to receive workshop updates and occasional offers (like 10% off!)</label>
+      <button type="submit">Confirm Registration</button>
+      <input type="hidden" name="_subject" value="You're In! Metal Clay Jewelry Workshop – May 17" />
+      <input type="hidden" name="_autoresponse" value="Hi [Name],
+
+Thank you for registering for Barbara Kirby’s Metal Clay Jewelry Workshop on May 17! Your spot is now confirmed. We’ll send a reminder the week of the event. In the meantime, feel free to reach out if you have any questions.
+
+— Barbara Kirby Jewelry" />
+    </form>
   </div>
-  <p>Barbara Kirby started making jewelry as a way to heal—and discovered a lifelong passion. She now teaches others the joy of turning raw materials into radiant, wearable art. With years of experience in metalsmithing and metal clay, Barbara’s workshops are both educational and inspiring.</p>
-</section>
 
-<section id="contact">
-  <h2>Contact</h2>
-  <p>Email: <a href="mailto:barbie10562@gmail.com">barbie10562@gmail.com</a></p>
-</section>
+  <div class="section" id="parties">
+    <h2>Host a Jewelry Party</h2>
+    <p>Book a memorable evening of creativity and sparkle! Host a jewelry-making party for friends, family, or a special event. We’ll bring the tools—you bring the wine.</p>
+    <div class="gallery">
+      <img src="party1.jpg" alt="Happy students" />
+      <img src="party2.jpg" alt="Jewelry party" />
+    </div>
+  </div>
 
-<footer>
-  &copy; 2025 b kirby jewelry. All rights reserved.
-</footer>
+  <div class="section" id="about">
+    <h2>Meet Barbara</h2>
+    <img src="barbara.jpg" alt="Barbara Kirby" style="width:220px;border-radius:12px;margin-bottom:1em;" />
+    <p>Barbara Kirby started making jewelry as a way to heal—and discovered a lifelong passion. She now teaches others the joy of turning raw materials into radiant, wearable art. With years of experience in metalsmithing and metal clay, Barbara’s workshops are welcoming, hands-on, and filled with encouragement.</p>
+  </div>
 
+  <footer>
+    &copy; 2025 Barbara Kirby Jewelry. All rights reserved.
+  </footer>
 </body>
 </html>
