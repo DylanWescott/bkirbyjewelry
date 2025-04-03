@@ -12,6 +12,8 @@
       padding: 0;
       font-size: 18px;
       line-height: 1.6;
+      background: #fff;
+      color: #333;
     }
     header {
       background: #6a1b9a;
@@ -51,18 +53,54 @@
     }
     .section {
       max-width: 900px;
-      margin: 4em auto;
+      margin: 5em auto;
       padding: 0 1em;
     }
-    footer {
-      background: #eee;
-      text-align: center;
+    .section h2 {
+      margin-top: 0;
+    }
+    form {
+      background: #f9f9f9;
       padding: 2em;
-      font-size: 0.9em;
+      border-radius: 8px;
+      margin-top: 1.5em;
+    }
+    form label {
+      display: block;
+      margin-top: 1em;
+      margin-bottom: 0.3em;
+      font-weight: bold;
+    }
+    form input[type="text"],
+    form input[type="email"] {
+      width: 100%;
+      padding: 0.5em;
+      font-size: 1em;
+      border-radius: 5px;
+      border: 1px solid #aaa;
+    }
+    form .checkbox-label {
+      display: flex;
+      align-items: center;
+      margin-top: 1em;
+      font-size: 0.95em;
+    }
+    form .checkbox-label input {
+      margin-right: 0.5em;
+    }
+    form button {
+      margin-top: 1.5em;
+      background-color: #6a1b9a;
+      color: white;
+      padding: 0.75em 1.5em;
+      border: none;
+      border-radius: 4px;
+      font-size: 1em;
+      cursor: pointer;
     }
     .return-top {
       text-align: center;
-      margin-top: 2em;
+      margin-top: 3em;
     }
     .return-top a {
       text-decoration: none;
@@ -70,6 +108,15 @@
       padding: 0.5em 1em;
       border-radius: 4px;
       color: #000;
+    }
+    footer {
+      background: #eee;
+      text-align: center;
+      padding: 2em;
+      font-size: 0.9em;
+    }
+    ul {
+      padding-left: 1.2em;
     }
   </style>
 </head>
@@ -94,69 +141,93 @@
     <a href="https://bkirbyjewelry.etsy.com" target="_blank">Etsy Shop</a>
   </nav>
 
-  <div class="section" id="intro">
-    <h2>Welcome to b kirby jewelry</h2>
-    <p>This is a creative hub for learning, making, and experiencing handmade silver jewelry with artist and instructor Barbara Kirby.</p>
-    <ul>
-      <li><a href="#workshop">Upcoming Workshop</a></li>
-      <li><a href="#classes">Jewelry Classes</a></li>
-      <li><a href="#parties">Jewelry-Making Parties</a></li>
-      <li><a href="#about">About Barbara</a></li>
-      <li><a href="#faq">Frequently Asked Questions</a></li>
-    </ul>
-  </div>
-
   <div class="section" id="workshop">
     <h2>Metal Clay Jewelry Workshop – May 17, 2025</h2>
-    <p><strong>Date:</strong> Saturday, May 17, 2025<br />
-       <strong>Time:</strong> 11:00 AM – 2:00 PM<br />
-       <strong>Location:</strong> Melita’s Home, 125 Main Street, Ossining, NY</p>
-    <p><strong>Includes:</strong> 50g of Silver Metal Clay, tools, textures, molds, firing/polishing, refreshments.</p>
-    <p><strong>Total Cost:</strong> $260 – reserve your seat today with an $85 deposit!</p>
+    <p><strong>Date:</strong> Saturday, May 17, 2025</p>
+    <p><strong>Time:</strong> 11:00 AM – 2:00 PM</p>
+    <p><strong>Location:</strong> Melita’s Home, 125 Main Street, Ossining, NY</p>
+
+    <p><strong>Includes:</strong></p>
+    <ul>
+      <li>50g of Silver Metal Clay</li>
+      <li>Tools, textures, molds</li>
+      <li>Professional kiln firing and polishing</li>
+      <li>Light refreshments</li>
+    </ul>
+
+    <p><strong>Total Cost:</strong> $260 per person<br>
+    <strong>Deposit:</strong> $85 (due now via PayPal)<br>
+    <strong>Balance:</strong> $175 due at the workshop</p>
 
     <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_blank">
       <input type="hidden" name="cmd" value="_xclick">
       <input type="hidden" name="business" value="denby10562@gmail.com">
-      <input type="hidden" name="item_name" value="Metal Clay Workshop – May 17, 2025">
+      <input type="hidden" name="item_name" value="Metal Clay Jewelry Workshop – May 17, 2025">
       <input type="hidden" name="amount" value="85.00">
       <input type="hidden" name="currency_code" value="USD">
-      <label>Your Name: <input type="text" name="on0" required></label>
-      <label>Your Email: <input type="email" name="on1" required></label>
-      <label><input type="checkbox" name="custom" value="optin" /> Yes, I want to receive future emails and offers</label>
+
+      <label>Your Name:</label>
+      <input type="text" name="on0" placeholder="Full Name" required>
+
+      <label>Your Email:</label>
+      <input type="email" name="on1" placeholder="Email Address" required>
+
+      <label class="checkbox-label">
+        <input type="checkbox" name="custom" value="optin">
+        Yes, I’d like to receive workshop updates and special offers
+      </label>
+
       <button type="submit">Pay $85 Deposit with PayPal</button>
     </form>
+
     <div class="return-top"><a href="#top">Return to Top</a></div>
   </div>
 
   <div class="section" id="classes">
     <h2>Jewelry Classes</h2>
-    <p>Barbara offers one-on-one and group sessions covering techniques in silver metal clay and jewelry finishing. Classes are tailored to all skill levels.</p>
+    <p>Barbara offers private and small-group classes for those who want to dive deeper into the art of metal clay jewelry. Whether you’re just getting started or refining your technique, her classes are tailored to your pace and goals. Learn how to shape, texture, fire, and finish stunning one-of-a-kind silver pieces that reflect your personal style.</p>
     <div class="return-top"><a href="#top">Return to Top</a></div>
   </div>
 
   <div class="section" id="parties">
     <h2>Host a Jewelry Party</h2>
-    <p>Celebrate birthdays, bridal showers, or creative get-togethers with a jewelry-making party hosted by Barbara at your location or a local venue.</p>
+    <p>Looking for a unique way to celebrate? Whether it’s a birthday, bridal shower, or just a creative girls’ night, Barbara’s jewelry-making parties bring hands-on fun to your home or venue. Guests design and create a beautiful silver piece to take home—no experience needed!</p>
+    <p>Parties include all materials, expert guidance, and light refreshments upon request. Available for groups of 4–10.</p>
     <div class="return-top"><a href="#top">Return to Top</a></div>
   </div>
 
   <div class="section" id="about">
     <h2>About Barbara Kirby</h2>
-    <p>Barbara Kirby is a metal clay jewelry artist with over 15 years of experience in creating, teaching, and inspiring others through the art of wearable silver sculpture. Her work has been exhibited throughout the Hudson Valley.</p>
+    <p>Barbara Kirby is a Hudson Valley-based jewelry artist and educator specializing in silver metal clay. With over 15 years of experience, she’s taught hundreds of students how to create stunning, meaningful jewelry pieces. Her approach is warm, encouraging, and highly personalized—perfect for beginners and experienced makers alike.</p>
     <img src="Barbara New Smudge Cropped.jpg" alt="Barbara Kirby" style="width:100%;max-width:300px;border-radius:8px;margin-top:1em;" />
     <div class="return-top"><a href="#top">Return to Top</a></div>
   </div>
 
   <div class="section" id="faq">
     <h2>Frequently Asked Questions</h2>
-    <h3>Can I buy jewelry from your store?</h3>
-    <p>Yes! Barbara’s work is featured at Melita’s Home in Ossining. You can also browse available pieces on her <a href="https://bkirbyjewelry.etsy.com" target="_blank">Etsy shop</a>.</p>
+    <h3>Do I need to have experience?</h3>
+    <p>No! All workshops and classes are beginner-friendly. Barbara walks you through every step.</p>
 
-    <h3>Do I need experience to join a workshop?</h3>
-    <p>No experience needed—our workshops are beginner-friendly and all materials are provided.</p>
+    <h3>What should I wear?</h3>
+    <p>Comfortable clothing. You’ll be working with small tools and may get a little dusty.</p>
 
-    <h3>What happens after I register?</h3>
-    <p>You’ll get a confirmation email and a reminder before the event. The remaining balance is paid at the workshop.</p>
+    <h3>Will I really finish a piece of jewelry?</h3>
+    <p>Yes! You’ll leave with a beautiful, kiln-fired silver piece—ready to wear or give as a gift.</p>
+
+    <h3>What if I want to buy Barbara’s work?</h3>
+    <p>Barbara sells her jewelry at Melita’s Home in Ossining and online at <a href="https://bkirbyjewelry.etsy.com" target="_blank">her Etsy shop</a>.</p>
+
+    <h3>Where are classes and workshops held?</h3>
+    <p>Workshops are hosted at Melita’s Home, and private classes can be arranged at local venues or your own home.</p>
+
+    <h3>What if I can’t make it after registering?</h3>
+    <p>Contact Barbara at least 72 hours in advance for deposit credit toward a future workshop.</p>
+
+    <h3>How many people can attend a workshop?</h3>
+    <p>Workshops are limited to 8 participants so everyone gets personal attention.</p>
+
+    <h3>What if I want to host a party?</h3>
+    <p>Great idea! Contact Barbara to schedule. All supplies are brought to you, and every guest makes their own silver creation.</p>
 
     <div class="return-top"><a href="#top">Return to Top</a></div>
   </div>
