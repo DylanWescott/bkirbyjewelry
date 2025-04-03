@@ -8,8 +8,6 @@
   <style>
     body {
       font-family: 'Segoe UI', sans-serif;
-      background: #fff;
-      color: #333;
       margin: 0;
       padding: 0;
       font-size: 18px;
@@ -20,115 +18,63 @@
       color: white;
       text-align: center;
       padding: 1.5em 1em;
-      width: 100%;
-      box-sizing: border-box;
     }
     header img {
       height: 60px;
       display: block;
       margin: 0 auto 1em;
     }
-    nav {
+    .cta-banner {
+      background: #f3e5f5;
       text-align: center;
+      padding: 1em;
+    }
+    .cta-banner a {
+      display: inline-block;
+      margin-top: 0.5em;
+      padding: 0.5em 1.5em;
+      background-color: #6a1b9a;
+      color: white;
+      text-decoration: none;
+      border-radius: 4px;
+    }
+    nav {
       background: #f8f8f8;
-      padding: 1em 0;
+      text-align: center;
+      padding: 1em;
     }
     nav a {
+      margin: 0 10px;
       color: #6a1b9a;
-      margin: 0 15px;
       text-decoration: none;
       font-weight: bold;
     }
-    .cta-banner {
-      background-color: #6a1b9a;
-      color: white;
-      padding: 1.5em;
-      text-align: center;
-    }
-    .cta-banner a {
-      color: white;
-      font-weight: bold;
-      text-decoration: underline;
-      display: inline-block;
-      margin-top: 1em;
-      padding: 0.75em 2em;
-      background-color: #333;
-      border-radius: 4px;
-    }
     .section {
-      max-width: 960px;
-      margin: 5em auto;
+      max-width: 900px;
+      margin: 4em auto;
       padding: 0 1em;
     }
-    .return-top {
-      margin-top: 3em;
+    footer {
+      background: #eee;
       text-align: center;
+      padding: 2em;
+      font-size: 0.9em;
+    }
+    .return-top {
+      text-align: center;
+      margin-top: 2em;
     }
     .return-top a {
       text-decoration: none;
       background: #ccc;
-      color: black;
       padding: 0.5em 1em;
-      border-radius: 5px;
-      display: inline-block;
-    }
-    footer {
-      text-align: center;
-      background: #eee;
-      padding: 2em;
-      font-size: 0.9em;
-    }
-    form {
-      max-width: 500px;
-      margin: 2em auto;
-    }
-    label, input {
-      display: block;
-      width: 100%;
-      margin-bottom: 1em;
-    }
-    input[type="text"],
-    input[type="email"] {
-      padding: 0.5em;
-      font-size: 1em;
-      border-radius: 5px;
-      border: 1px solid #aaa;
-    }
-    button {
-      background-color: #6a1b9a;
-      color: white;
-      padding: 0.75em 1.5em;
-      border: none;
       border-radius: 4px;
-      font-size: 1em;
-      cursor: pointer;
-    }
-    .gallery {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 1em;
-      justify-content: center;
-    }
-    .gallery img {
-      width: 100%;
-      max-width: 280px;
-      height: auto;
-      object-fit: cover;
-      border-radius: 8px;
-    }
-    .checkbox-label {
-      display: flex;
-      align-items: center;
-      gap: 0.5em;
-      font-size: 0.95em;
-    }
-    ul {
-      padding-left: 1.2em;
+      color: #000;
     }
   </style>
 </head>
 <body>
-  <header id="top">
+  <header>
     <img src="logo.jpg" alt="b kirby jewelry logo" />
     <h1>b kirby jewelry</h1>
     <p>JEWELRY FOR LIFE</p>
@@ -150,101 +96,73 @@
 
   <div class="section" id="intro">
     <h2>Welcome to b kirby jewelry</h2>
-    <p>Discover the art of metal clay jewelry with expert instructor Barbara Kirby. Whether you're looking to learn, host a fun jewelry-making party, or join a hands-on workshop, we have something for everyone!</p>
-
-    <h3>Explore the Site:</h3>
+    <p>This is a creative hub for learning, making, and experiencing handmade silver jewelry with artist and instructor Barbara Kirby.</p>
     <ul>
       <li><a href="#workshop">Upcoming Workshop</a></li>
       <li><a href="#classes">Jewelry Classes</a></li>
-      <li><a href="#parties">Host a Jewelry Party</a></li>
-      <li><a href="#about">About Barbara Kirby</a></li>
+      <li><a href="#parties">Jewelry-Making Parties</a></li>
+      <li><a href="#about">About Barbara</a></li>
       <li><a href="#faq">Frequently Asked Questions</a></li>
-      <li><a href="https://bkirbyjewelry.etsy.com" target="_blank">Visit the Etsy Shop</a></li>
     </ul>
-
-    <p>Take a look around and find the perfect way to ignite your creativity!</p>
   </div>
 
   <div class="section" id="workshop">
-    <h2>Upcoming Workshop</h2>
-    <p><strong>Metal Clay Jewelry Workshop</strong><br>
-    🗓️ <strong>Date:</strong> Saturday, May 17, 2025<br>
-    ⏰ <strong>Time:</strong> 11:00 AM – 2:00 PM<br>
-    📍 <strong>Location:</strong> Melita’s Home, 125 Main Street, Ossining, NY</p>
-
-    <img src="Silver-Metal-Clay-Jewelry-with-Barbara-Kirby.jpg" alt="Workshop" style="max-width:100%; border-radius:8px; margin: 1em 0;">
-
-    <h3>What’s Included:</h3>
-    <ul>
-      <li>✔️ Hands-on jewelry making session with Barbara Kirby</li>
-      <li>✔️ All tools, textures, and molds provided</li>
-      <li>✔️ 50 grams of Silver Metal Clay (included in tuition)</li>
-      <li>✔️ Professional post-workshop kiln firing and polishing</li>
-      <li>✔️ Light refreshments served</li>
-    </ul>
-
-    <h3>Total Cost:</h3>
-    <p><strong>$260 per person</strong></p>
-
-    <h3>Reserve Your Spot Today</h3>
-    <p>This special hands-on workshop is limited to just <strong>8 participants</strong> so everyone gets personal attention. <strong>Spots are filling fast</strong> — secure your seat today with an $85 deposit.</p>
-    <p>You’ll complete the remaining balance of <strong>$175</strong> at the workshop by cash, check, or digital payment.</p>
+    <h2>Metal Clay Jewelry Workshop – May 17, 2025</h2>
+    <p><strong>Date:</strong> Saturday, May 17, 2025<br />
+       <strong>Time:</strong> 11:00 AM – 2:00 PM<br />
+       <strong>Location:</strong> Melita’s Home, 125 Main Street, Ossining, NY</p>
+    <p><strong>Includes:</strong> 50g of Silver Metal Clay, tools, textures, molds, firing/polishing, refreshments.</p>
+    <p><strong>Total Cost:</strong> $260 – reserve your seat today with an $85 deposit!</p>
 
     <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_blank">
       <input type="hidden" name="cmd" value="_xclick">
       <input type="hidden" name="business" value="denby10562@gmail.com">
-      <input type="hidden" name="item_name" value="Metal Clay Jewelry Workshop – May 17, 2025">
+      <input type="hidden" name="item_name" value="Metal Clay Workshop – May 17, 2025">
       <input type="hidden" name="amount" value="85.00">
       <input type="hidden" name="currency_code" value="USD">
-
-      <label for="on0">Your Name:</label>
-      <input type="text" name="on0" placeholder="Full Name" required>
-
-      <label for="on1">Your Email:</label>
-      <input type="email" name="on1" placeholder="Email Address" required>
-
-      <label class="checkbox-label">
-        <input type="checkbox" name="custom" value="optin">
-        Yes, I’d like to receive workshop updates and special offers
-      </label>
-
+      <label>Your Name: <input type="text" name="on0" required></label>
+      <label>Your Email: <input type="email" name="on1" required></label>
+      <label><input type="checkbox" name="custom" value="optin" /> Yes, I want to receive future emails and offers</label>
       <button type="submit">Pay $85 Deposit with PayPal</button>
     </form>
+    <div class="return-top"><a href="#top">Return to Top</a></div>
+  </div>
 
+  <div class="section" id="classes">
+    <h2>Jewelry Classes</h2>
+    <p>Barbara offers one-on-one and group sessions covering techniques in silver metal clay and jewelry finishing. Classes are tailored to all skill levels.</p>
+    <div class="return-top"><a href="#top">Return to Top</a></div>
+  </div>
+
+  <div class="section" id="parties">
+    <h2>Host a Jewelry Party</h2>
+    <p>Celebrate birthdays, bridal showers, or creative get-togethers with a jewelry-making party hosted by Barbara at your location or a local venue.</p>
+    <div class="return-top"><a href="#top">Return to Top</a></div>
+  </div>
+
+  <div class="section" id="about">
+    <h2>About Barbara Kirby</h2>
+    <p>Barbara Kirby is a metal clay jewelry artist with over 15 years of experience in creating, teaching, and inspiring others through the art of wearable silver sculpture. Her work has been exhibited throughout the Hudson Valley.</p>
+    <img src="Barbara New Smudge Cropped.jpg" alt="Barbara Kirby" style="width:100%;max-width:300px;border-radius:8px;margin-top:1em;" />
     <div class="return-top"><a href="#top">Return to Top</a></div>
   </div>
 
   <div class="section" id="faq">
     <h2>Frequently Asked Questions</h2>
-    <h3>What exactly will I make in the workshop?</h3>
-    <p>You’ll create a beautiful, custom piece of jewelry made from high-quality silver metal clay. Whether it’s a pendant, earrings, or a bracelet, you’ll have a finished piece by the end of the session.</p>
+    <h3>Can I buy jewelry from your store?</h3>
+    <p>Yes! Barbara’s work is featured at Melita’s Home in Ossining. You can also browse available pieces on her <a href="https://bkirbyjewelry.etsy.com" target="_blank">Etsy shop</a>.</p>
 
-    <h3>Do I need to have any experience to attend?</h3>
-    <p>No prior experience is necessary. Our workshop is perfect for beginners, and Barbara will guide you through each step of the jewelry-making process.</p>
+    <h3>Do I need experience to join a workshop?</h3>
+    <p>No experience needed—our workshops are beginner-friendly and all materials are provided.</p>
 
-    <h3>How long is the workshop?</h3>
-    <p>The workshop lasts approximately 3 hours. We’ll take breaks and you’ll have plenty of time to work at your own pace with personal assistance from Barbara.</p>
-
-    <h3>What should I wear to the workshop?</h3>
-    <p>We recommend wearing comfortable clothing. You’ll be working with small tools and materials, so something casual and easy to move in is ideal.</p>
-
-    <h3>Do you provide all the materials for the workshop?</h3>
-    <p>Yes! All the materials, tools, textures, and molds are provided. You’ll receive 50 grams of silver metal clay to use during the session, and we'll guide you through creating your design.</p>
-
-    <h3>How do I pay for the workshop?</h3>
-    <p>You can secure your spot with an $85 deposit paid through PayPal. The remaining balance of $175 is due at the workshop and can be paid via cash, check, or digital payment methods.</p>
-
-    <h3>How many people will be in the workshop?</h3>
-    <p>The workshop is limited to just 8 participants, ensuring that everyone receives personal attention and a tailored experience.</p>
-
-    <h3>Can I bring a friend?</h3>
-    <p>Yes! If you’d like to bring a friend, simply have them register separately. The more the merrier!</p>
+    <h3>What happens after I register?</h3>
+    <p>You’ll get a confirmation email and a reminder before the event. The remaining balance is paid at the workshop.</p>
 
     <div class="return-top"><a href="#top">Return to Top</a></div>
   </div>
 
   <footer>
-    <p>© 2025 b kirby jewelry | All Rights Reserved | Designed with love by Barbara Kirby</p>
+    <p>© 2025 b kirby jewelry | All Rights Reserved</p>
   </footer>
 </body>
 </html>
