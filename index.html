@@ -1,241 +1,93 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>b kirby jewelry</title>
-  <style>
-    body {
-      font-family: 'Segoe UI', sans-serif;
-      background: #fff;
-      color: #333;
-      margin: 0;
-      padding: 0;
-      font-size: 18px;
-      line-height: 1.6;
-    }
-    header {
-      background: #6a1b9a;
-      color: white;
-      text-align: center;
-      padding: 1.5em 1em;
-    }
-    header img {
-      height: 60px; /* Reduced header size */
-      display: block;
-      margin: 0 auto 1em;
-    }
-    nav {
-      text-align: center;
-      background: #f8f8f8;
-      padding: 1em 0;
-    }
-    nav a {
-      color: #6a1b9a;
-      margin: 0 15px;
-      text-decoration: none;
-      font-weight: bold;
-    }
-    .section {
-      max-width: 960px;
-      margin: 5em auto;
-      padding: 0 1em;
-    }
-    .return-top {
-      margin-top: 3em;
-      text-align: center;
-    }
-    .return-top a {
-      text-decoration: none;
-      background: #ccc;
-      color: black;
-      padding: 0.5em 1em;
-      border-radius: 5px;
-      display: inline-block;
-    }
-    footer {
-      text-align: center;
-      background: #eee;
-      padding: 2em;
-      font-size: 0.9em;
-    }
-    form {
-      max-width: 500px;
-      margin: 2em auto;
-    }
-    label, input {
-      display: block;
-      width: 100%;
-      margin-bottom: 1em;
-    }
-    input[type="text"],
-    input[type="email"] {
-      padding: 0.5em;
-      font-size: 1em;
-      border-radius: 5px;
-      border: 1px solid #aaa;
-    }
-    button {
-      background-color: #6a1b9a;
-      color: white;
-      padding: 0.75em 1.5em;
-      border: none;
-      border-radius: 4px;
-      font-size: 1em;
-      cursor: pointer;
-    }
-    .gallery {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 1em;
-      justify-content: center;
-    }
-    .gallery img {
-      width: 280px;
-      object-fit: cover;
-      border-radius: 8px;
-    }
-    .checkbox-label {
-      display: flex;
-      align-items: center;
-      gap: 0.5em;
-      font-size: 0.95em;
-    }
-    ul {
-      padding-left: 1.2em;
-    }
-    .cta-banner {
-      background-color: #6a1b9a;
-      color: white;
-      padding: 1em;
-      text-align: center;
-    }
-    .cta-banner a {
-      color: white;
-      font-weight: bold;
-      text-decoration: underline;
-    }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>b kirby jewelry</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #fff;
+            color: #333;
+        }
+        header {
+            background-color: #6a49a1;
+            color: white;
+            padding: 2em 1em;
+            text-align: center;
+            font-size: 1.5em;
+        }
+        header h1 {
+            margin: 0;
+            font-size: 2.5em;
+        }
+        .main-content {
+            padding: 20px;
+            text-align: center;
+        }
+        .cta {
+            font-size: 1.2em;
+            color: #6a49a1;
+            margin: 1.5em 0;
+        }
+        .cta a {
+            text-decoration: none;
+            background-color: #6a49a1;
+            color: white;
+            padding: 0.8em 1.5em;
+            font-size: 1.2em;
+            border-radius: 8px;
+            margin: 10px;
+        }
+        .cta a:hover {
+            background-color: #5a4191;
+        }
+        .content-section {
+            margin-top: 30px;
+        }
+        .content-section h2 {
+            color: #6a49a1;
+        }
+        .content-section ul {
+            list-style: none;
+            padding: 0;
+        }
+        .content-section ul li {
+            margin: 1em 0;
+            font-size: 1.2em;
+        }
+    </style>
 </head>
 <body>
-  <header id="top">
-    <img src="logo.jpg" alt="b kirby jewelry logo" />
-    <h1>b kirby jewelry</h1>
-    <p>JEWELRY FOR LIFE</p>
-  </header>
+    <header>
+        <h1>b kirby jewelry</h1>
+        <p>JEWELRY FOR LIFE</p>
+    </header>
 
-  <div class="cta-banner">
-    <p><strong>Limited spots available for our May 17 Workshop!</strong> Reserve your seat today.</p>
-    <a href="#workshop">Sign Up Now</a>
-  </div>
+    <div class="main-content">
+        <div class="cta">
+            <p>Limited spots available for our May 17 Workshop! Reserve your seat today.</p>
+            <a href="#workshop">Sign Up Now</a>
+        </div>
 
-  <nav>
-    <a href="#workshop">Workshop</a>
-    <a href="#classes">Classes</a>
-    <a href="#parties">Parties</a>
-    <a href="#about">About</a>
-    <a href="https://bkirbyjewelry.etsy.com" target="_blank">Etsy Shop</a>
-  </nav>
+        <div class="content-section">
+            <h2>Welcome to b kirby jewelry</h2>
+            <p>Discover the art of metal clay jewelry with expert instructor Barbara Kirby. Whether you're looking to learn, host a fun jewelry-making party, or join a hands-on workshop, we have something for everyone!</p>
+        </div>
 
-  <div class="section" id="intro">
-    <h2>Welcome to b kirby jewelry</h2>
-    <p>Discover the art of metal clay jewelry with expert instructor Barbara Kirby. Whether you're looking to learn, host a fun jewelry-making party, or join a hands-on workshop, we have something for everyone!</p>
-
-    <h3>Explore the Site:</h3>
-    <ul>
-      <li><a href="#workshop">Upcoming Workshop</a></li>
-      <li><a href="#classes">Jewelry Classes</a></li>
-      <li><a href="#parties">Host a Jewelry Party</a></li>
-      <li><a href="#about">About Barbara Kirby</a></li>
-      <li><a href="https://bkirbyjewelry.etsy.com" target="_blank">Visit the Etsy Shop</a></li>
-    </ul>
-
-    <p>Take a look around and find the perfect way to ignite your creativity!</p>
-  </div>
-
-  <div class="section" id="workshop">
-    <h2>Upcoming Workshop</h2>
-    <p><strong>Metal Clay Jewelry Workshop</strong><br>
-    🗓️ <strong>Date:</strong> Saturday, May 17, 2025<br>
-    ⏰ <strong>Time:</strong> 11:00 AM – 2:00 PM<br>
-    📍 <strong>Location:</strong> 125 Main Street, Ossining, NY</p>
-
-    <img src="Silver-Metal-Clay-Jewelry-with-Barbara-Kirby.jpg" alt="Workshop" style="max-width:100%; border-radius:8px; margin: 1em 0;">
-
-    <h3>What’s Included:</h3>
-    <ul>
-      <li>✔️ Hands-on jewelry making session with Barbara Kirby</li>
-      <li>✔️ All tools, textures, and molds provided</li>
-      <li>✔️ 50 grams of Silver Metal Clay (included in tuition)</li>
-      <li>✔️ Professional post-workshop kiln firing and polishing</li>
-      <li>✔️ Light refreshments served</li>
-    </ul>
-
-    <h3>Total Cost:</h3>
-    <p><strong>$260 per person</strong></p>
-
-    <h3>Reserve Your Spot Today</h3>
-    <p>This special hands-on workshop is limited to just <strong>8 participants</strong> so everyone gets personal attention. <strong>Spots are filling fast</strong> — secure your seat today with an $85 deposit.</p>
-    <p>You’ll complete the remaining balance of <strong>$175</strong> at the workshop by cash, check, or digital payment.</p>
-
-    <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_blank">
-      <input type="hidden" name="cmd" value="_xclick">
-      <input type="hidden" name="business" value="denby10562@gmail.com">
-      <input type="hidden" name="item_name" value="Metal Clay Jewelry Workshop – May 17, 2025">
-      <input type="hidden" name="amount" value="85.00">
-      <input type="hidden" name="currency_code" value="USD">
-
-      <label for="on0">Your Name:</label>
-      <input type="text" name="on0" placeholder="Full Name" required>
-
-      <label for="on1">Your Email:</label>
-      <input type="email" name="on1" placeholder="Email Address" required>
-
-      <label class="checkbox-label">
-        <input type="checkbox" name="custom" value="optin">
-        Yes, I’d like to receive workshop updates and special offers
-      </label>
-
-      <button type="submit">Pay $85 Deposit with PayPal</button>
-    </form>
-
-    <div class="return-top"><a href="#top">Return to Top</a></div>
-  </div>
-
-  <div class="section" id="classes">
-    <h2>Metal Clay Jewelry Classes</h2>
-    <p>Learn to make beautiful, wearable art with metal clay. Our classes are designed to be fun, beginner-friendly, and full of creativity.</p>
-    <div class="gallery">
-      <img src="class1.jpg" alt="Class in session">
-      <img src="jewelry1.jpg" alt="Jewelry samples">
+        <div class="content-section">
+            <h2>Explore the Site:</h2>
+            <ul>
+                <li><a href="#workshop">Upcoming Workshop</a></li>
+                <li><a href="#classes">Jewelry Classes</a></li>
+                <li><a href="#parties">Host a Jewelry Party</a></li>
+                <li><a href="#about">About Barbara Kirby</a></li>
+                <li><a href="#shop">Visit the Etsy Shop</a></li>
+            </ul>
+        </div>
     </div>
-    <div class="return-top"><a href="#top">Return to Top</a></div>
-  </div>
-
-  <div class="section" id="parties">
-    <h2>Host a Jewelry Party</h2>
-    <p>Book a memorable evening of creativity and sparkle! Host a jewelry-making party for friends, family, or a special event. We’ll bring the tools—you bring the wine.</p>
-    <div class="gallery">
-      <img src="party1.jpg" alt="Happy students">
-      <img src="party2.jpg" alt="Jewelry party">
-    </div>
-    <div class="return-top"><a href="#top">Return to Top</a></div>
-  </div>
-
-  <div class="section" id="about">
-    <h2>Meet Barbara</h2>
-    <img src="barbara.jpg" alt="Barbara Kirby" style="width:220px; border-radius:12px; margin-bottom:1em;">
-    <p>Barbara Kirby started making jewelry as a way to heal—and discovered a lifelong passion. She now teaches others the joy of turning raw materials into radiant, wearable art. With years of experience in metalsmithing and metal clay, Barbara’s workshops are welcoming, hands-on, and filled with encouragement.</p>
-    <div class="return-top"><a href="#top">Return to Top</a></div>
-  </div>
-
-  <footer>
-    &copy; 2025 Barbara Kirby Jewelry. All rights reserved.
-    <div class="social-links">
-      <a href="https://www.instagram.com" target="_blank">Instagram</a> |
-      <a href="https://www.facebook.com" target="_blank">Facebook</a> |
-      <a href="https://www.pinterest.com" target="_blank">Pinterest</a>
-    </div>
-  </footer>
 </body>
 </html>
